@@ -1,0 +1,5713 @@
+   
+
+   
+   java 
+   
+   what is java?
+   
+      object oritend programming language
+	  
+   why pl?
+      to develop the software/application
+	  
+	why are we developing the software(s)?
+	
+	1.problem solving
+	2.efficiency and automation 
+	3.innovation
+	4.business growth
+	5.customization
+	6.data management
+	7.connectivity and communication 
+	
+	
+we have different programming languages 
+
+   procedural oriented programming language
+      object oriented programming langauge
+   modula oriented programming languages
+   scripting oriented programming languages
+   
+   
+
+how can we say java is oopl?
+ 
+    because it is following oops principles
+	
+	  oops principles  - OMG (object management group) - candain organization 
+	  
+	       inheritance
+		   polymorpshim
+		   abstraction 
+		   encapsulation 
+		   
+		   
+java -> was given by which organization?
+
+        initially it was sunmicrosystem (scjp)
+		now oracle (ocjp)
+		1995
+		author: james gosling
+		url: www.oracle.com
+		29 years ago 
+		popularity
+		java has its own characteristics/principles/buzzwards
+		
+		->13 features 
+		
+		java is simple
+		
+		2gb occupied memory
+		
+		2gb free memory -> resources
+		
+		
+		
+		  
+		     -> garbage collector
+			 
+			    memory management will be taking care by garbage collector 
+				
+				as a programmer do we need to write any program?
+				
+				   now
+				   
+			 -> user friendly library
+			 
+			 
+			 
+			 
+		java is platform independent
+		
+		       java - windows 
+			           .class 
+					   
+					   byte code
+					   
+					   
+			   unix -will it work ? 
+			    we can 
+				
+		irrespective of any operating system we are using 
+		we can write java program once, we can reuse or 
+		run any where
+		  java  slogan - wora
+		  write once run anywhere 
+		  
+		  
+	
+when java released by james gosling in the year of 1995, he released 
+this java into three editions
+
+   ->jse(core java)-java standard edition 
+   ->jee(advanced java)-java enterprise edition 
+   ->jme-java micro/mobile edition 
+   
+   
+   using core java, what we can develop?
+   
+in the market, we do have different types of applications ?
+
+       ->desktop application-results are not sharable across the globe
+	   
+	   ex: calculator,acrobaticreader,antivirus etc.. 
+	   
+	   ->internet application -results are sharable across the globe
+	   
+	   ex: facebook,flipkart,amazon etc.. 
+	   
+	   
+	  using jse, we can develop desktop applications
+
+      using jee, we can develop both desktop + web applications
+
+but if we really would like to learn jee, first we should learn jse 
+
+because jee got implemented on top of jse..
+
+jme ->we can develop 
+
+significance of learning core java/jse:
+```````````````````````````````````````
+to develop desktop applicaitons
+to learn advanced java
+to learn high end technologies like salesforce,mulesoft,
+pega,tableu,etc..
+	  
+   
+
+structure of java program 
+steps to follow to  write the java program
+compilation vs execution 
+variables 
+datatypes 
+methods 
+examples....
+
+
+structure of the java program:
+``````````````````````````````
+
+  every java program should starts with by defining the class. 
+  
+  this is the rule.
+  
+  without class, there is no java program.
+  
+  how can i define the class.
+  
+   as a programmer we have to follow some rules to define the program.
+   those rules technically we can call it as syntaxes. 
+   
+   syntaxes are given by language vendor. 
+   
+   
+   what happend if we don't follow the syntaxes?
+   
+    we will get compile time error.
+	
+	
+how can we define the class
+syntax to define the class
+
+    class Wipro
+    {
+
+      public static void main(String[] args)
+      {
+              
+      }
+    }   
+
+note:
+every java program execution starts from main method only.
+
+how main() looks like?
+
+  main() is the predefined method 
+  
+  
+
+note:
+anything we want to define or declare that should be inside the class only. 
+
+
+
+java is case sensitive programming language
+
+all java reserved keywords must be in lower case only.
+
+
+once you write the java program we have to save it by giving 
+extension as .java 
+
+
+ syntax: javac <filename>.java
+ 
+ we can give both filename and class name as same or different
+ 
+ 
+while we are executing we have to give classname 
+
+command to execute the java program 
+
+   syntax:
+     java <classname>
+	
+	
+	ex:
+	
+	  javac Tcs.java
+	  
+	  java Wipro
+	  
+.java file contains source code 	  
+.class file contains byte code 
+
+   ->not in human readable code
+   ->who can read?
+      jvm(java virtual machine)
+	  jvm is the part of jdk
+	  
+to work or to develop any java program first we need to download
+
+jdk software and make it install in your machines.
+
+java is open source 
+
+jvm will read this byte code and converts it into machine level code 
+
+so that we can execute it and we can get the output. 
+
+basic example(Helloworld program):
+
+class Wipro
+{
+ public static void main(String[] args)
+ {
+    System.out.println("welcome to java-trainings in wipro");	 
+ }
+}
+
+
+by default java commands could not recognizable by the operating system 
+to make it recognize open the command prompt and give below command 
+
+set path = "C:\Program Files\Java\jdk-21\bin";
+
+
+
+java is object oriented programming language
+
+
+to achieve those oops principles in java, we have two concepts are there
+
+  1.class
+  2.object
+  
+  
+  class:
+
+  class is the collection  of 
+
+     -variables
+     -methods 
+
+variable:
+
+   variables are the names refered to the memory location(s)
+
+syntax:
+
+     <datatype> <variablename> = <value>;
+
+100
+
+     int x=100;	 
+
+
+rama
+
+     String name  = "rama";
+	 
+	 
+45.67
+
+     float f = 45.67f;
+	 
+	
+in java, what type of datatypes are available?
+
+
+     prmitive 
+	
+	
+	-integer -to store integer values
+	     byte -1 byte - 8 bits
+		 short-2 bytes
+		 int   4 bytes
+		 long  8 bytes
+		 
+	-character
+	     char  - 2 bytes
+		 
+	-float 
+	     float
+		 double
+	-boolean
+	     boolean
+		 
+	 
+every datatype has its own range and memory size.
+	 
+byte datatype
+ 
+   -2 ^n-1 to 2 ^n-1 -1
+   
+   n - no.of bits
+   
+   -2^7 to 2^7 - 1
+   
+   -128 to 127
+   
+   short b = 128;
+   int 
+   long 
+   
+   int x = 120;//4 bytes 
+   
+
+
+example:
+```````
+class DataTypesDemo
+{
+
+   public static void main(String[] args)
+   {
+            //logic 
+             byte b = 127;
+			 System.out.println(b);
+			 String name = "kiran";
+			 System.out.println("student name is: "  + name);
+			 
+			 double marks1 = 98.876543212345678;
+			 float marks2  = 98.876543212345678f;
+			 
+			 System.out.println("student marks double type:" + marks1);
+			 System.out.println("student marks float type: " + marks2);
+			 
+			 char c = 'r';
+			 System.out.println("character value is: " + c);
+			 
+			 boolean bool = false;
+			 System.out.println("boolean value is: " + bool);
+			 
+   }
+
+}
+
+
+class is the collection of variables and methods 
+
+variable - name of the memory location 
+purpose: to store the data 
+
+    datatypes 
+	
+method:
+
+  method is the place where we are writing the logic. 
+  to perform some operation based on the requirement. 
+
+ syntax to define the method:
+
+  [accessmodifier] <returntype> <methodname> ([parameters])
+  {
+
+     //logic 
+  }  
+
+define one method which displays helloworld?
+
+   void display()
+   {
+     System.out.println("Helloworld");
+   }
+	
+  void -> it means it won't return any value. 
+  
+ 
+define one method which returns helloworld?
+
+   String display()
+   {
+     return "helloworld";
+   }
+   
+   return type and return value must be compatible otherwise we will 
+   get compiletime error. 
+   
+   
+define one method which returns your salary?
+
+   double getSalary()
+   {
+    return 7867.98;
+   }
+
+define one method which returns your grade?
+
+   char getGrade()
+   {
+     return 'A';
+   }
+
+define one method which accepts two integer values and returns their sum?
+
+    
+   int getSum(int x, int y)
+   {
+    return x+y;
+   }
+	
+define one method which accepts two integer values and displays their sum?
+
+   void getSum(int x, int y)
+   {
+     System.out.println("the sum of given two no's is: " +(x+y));
+   }
+   
+define one method which accepts firstname and lastname and returns their fullname?
+
+   String getFullName(String firstName,String lastName)
+   {
+    return firstName+lastName;
+	}
+	
+for the methods we have some naming convention 
+
+ firstword first letter should be in lower case and rest of the words first 
+ letters should be in upper case. 
+   
+      getGrade()
+	  getStudentInfo()
+	  getEmployeeData()
+	  getAge()
+	  
+	  
+while we are defining the classes there is one more naming convention 
+
+for class/interface 
+   
+    -everyword first letter should be in uppercase
+	
+	class Welcome{}
+	class EmployeeData{}
+	interface ProductDetails{}
+	
+
+class 
+   
+   -variables 
+   -methods
+   
+   
+example:
+```````
+class Student
+{
+  //variables
+  
+  int stid = 100;
+  String stname= "Rama";
+  double stmarks=99.5;
+  
+  //display these values
+  
+  public void getStudentInfo()
+  {
+	  
+	    System.out.println("student id is: " + stid);
+		System.out.println("student name is: " + stname);
+		System.out.println("student marks are: " + stmarks);
+	  
+  }
+
+}
+	
+
+note:
+inner method definition is not possible 
+but inner method invocation is possible. 
+
+   from one method we can call another method. 
+   
+   
+example:
+````````
+class Student
+{
+  //variables
+  
+  static int stid = 100;
+  static String stname= "Rama";
+  static double stmarks=99.5;
+  
+  //display these values
+  public static void getStudentInfo()
+  {
+	  //logic
+	    System.out.println("student id is: " + stid);
+		System.out.println("student name is: " + stname);
+		System.out.println("student marks are: " + stmarks);
+	  
+	  
+  }
+  public static void main(String[] args){
+	  //logic 
+	  //call getStudentInfo()
+	  getStudentInfo();
+	  
+	  
+  }
+
+}
+
+
+ to implement oops principles in java, we are using two concepts
+    -class 
+	-object 
+	
+
+object: instance of the class is known as object 
+
+ 	
+	instance: alloating the memory for variables which we are declaring inside 
+	the class. 
+	
+	when memory will be created?
+	
+	   when you create the object.
+	   
+	   
+	 when we define the class, memory will be created or not? 
+	 no
+	 
+	 
+syntax to create the object:
+
+    <classname> <objectname> = new <classname>();
+	
+	ex:
+
+     Student obj = new Student();
+
+    Student -> name of the class 
+
+    obj -> name of the objec tableu 
+   
+     = -> assignment operator
+
+     new -> dynamic memory allocation operator (keyword)
+
+  	Student() -> constructor 
+
+
+	
+example for creating the object :
+`````````````````````````````````
+class Student
+{
+  //variables
+  
+   int stid = 100;
+   String stname= "Rama";
+   double stmarks=99.5;
+  
+  //display these values
+  public  void getStudentInfo()
+  {
+	  //logic
+	    System.out.println("student id is: " + stid);
+		System.out.println("student name is: " + stname);
+		System.out.println("student marks are: " + stmarks);
+	  
+	  
+  }
+  public static void main(String[] args){
+	
+	  //create the object
+	  Student obj = new Student();
+	  System.out.println("student id is : " + obj.stid);
+	  System.out.println("student name is:" + obj.stname);
+	  System.out.println("student marks are: " + obj.stmarks);
+	  
+	  System.out.println("==================================");
+	  
+	  //call the method using object
+	  
+	  obj.getStudentInfo();
+	  
+	  System.out.println("==================================");
+	  Student obj1 = new Student();
+	  obj1.getStudentInfo();
+	  
+	  System.out.println(obj==obj1);
+	  
+  }
+
+}
+	
+	 
+	instance vs static 
+
+
+int a;//instance or non-static variable 
+
+static int a;//static variable
+
+	//non-static method or instance method 
+	
+	void m1(){
+	   //instance area 
+	} 
+	//static method
+	static void m1(){
+	  //static area 
+	  
+	}
+	
+	
+when can we declare a property as a static?
+
+ 	
+	if that property is common .
+	
+	advantage: memory will be created only once 
+	
+	
+	in your college 
+	1000 students are studying 
+	
+	   stid 
+	   stname 
+	   staddress
+	   stmobileno
+	   collegename 
+	
+	note: if we declare any property as a static, when memory will be created?
+	
+	   at the time of loading class into main memory
+	   
+	
+example:
+``````````
+class Student
+{
+    //instance or non-static variables
+  
+   int stid = 100;
+   String stname= "Rama";
+   double stmarks=99.5;
+   
+   //static variable
+   static String collegeName="wipro";
+   
+   
+    public static void main(String[] args){
+	
+	    //static area 
+		
+		System.out.println("collegename is: " + collegeName);
+		System.out.println("collegename is: " + Student.collegeName);
+		
+		System.out.println("student id is: " + new Student().stid);
+		System.out.println("student name is: " + new Student().stname);
+		System.out.println("student marks are: " + new Student().stmarks);
+		//System.out.println("collegename is: " + new Student().collegeName);
+	  
+    }
+
+}
+
+note:
+if we declare static property and accessing from same class we can access directly
+if we declare static property in one class and accessing from some other class then 
+we can access using classname.
+
+	
+control statements:
+
+  if 
+  ifelse
+  ifelseifladder
+  swtichcase
+  for
+  while
+  dowhile
+  foreach
+  
+class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+    int x = 101;
+	
+	if(x%2==0)
+	{
+		System.out.println(x + " is even number");
+	}
+	else
+	{
+		 System.out.println(x + " is odd number");
+	}
+}
+}
+
+    
+	example on ifelseif ladder:
+	`````````````````````````
+	class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+    int day=20;
+	
+	if(day==1)
+	{
+		System.out.println("it is monday");
+	}
+	else if(day==2)
+	{
+		System.out.println("it is tuesday");
+	}
+	else if(day==3)
+	{
+		System.out.println("it is wednesday");
+	}
+	else if(day==4)
+	{
+		System.out.println("it is thirsday");
+	}
+	else if(day==5)
+	{
+		System.out.println("it is friday");
+	}
+	else if(day==6)
+	{
+		System.out.println("it is saturday");
+	}
+	else if(day==7)
+	{
+		System.out.println("it is sunday");
+	}
+	else{
+		System.out.println("invalid");
+	}
+	
+	
+}
+}
+
+	
+	assignment: do one program on switch case and observe the difference between 
+	ifelseif ladder and switchcase.
+	
+	
+class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+	
+	for(int i=1;i<=10;i++){
+   
+        if(i%2==0)
+		{
+			System.out.println(i);
+		}
+	}
+
+}
+}
+	
+	
+display first 10 numbers in reverse direction using for loop?
+``````````````````````````````````````````````````````````````
+class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+	
+	for(int i=10;i>=1;i--){
+   
+       
+			System.out.println(i);
+		
+	}
+
+}
+}
+
+ do the same program using while loop and do while loop?
+ 
+ and observe the difference between while and do-while loop?
+ 
+ 
+ foreach loop 
+ 
+    -> to access the data either from array varaible or collection variable 
+	
+	
+	 int x= 100,200;//invalid 
+	 
+	requirement: i want to store multiple values in a single variable 
+	
+	 answer: using array
+	 
+	 int x[];//array variable 
+	 
+	 x = new Integer[3];//3 memory locations got created 
+ 
+     x[0]=1;
+	 x[1]=2;
+	 x[2]=3;
+	 
+	 x[3]=4;//IndexOutOfBoundsException 
+	 
+	 
+ example:
+ ```````
+ class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+	
+	//array declaration 
+	int x[];
+	//size declaration or array initialization
+	x = new int[3];
+	
+	//assign the values
+	
+	x[0]=1;
+	x[1]=2;
+	x[2]=3;
+	
+	
+	//display the values
+	
+	System.out.println(x[0]);
+	System.out.println(x[1]);
+	System.out.println(x[2]);
+	
+	System.out.println("=========using for loop============");
+	
+	for(int i=0;i<x.length;i++)
+	{
+		 System.out.println(x[i]);
+	}
+	
+	System.out.println("=============using foreach loop==========");
+	
+	for(int y : x)
+	{
+		 System.out.println(y);
+	}
+	
+	
+}
+}
+
+
+ 
+example:
+````````
+class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+	
+	int[] intArray = {10,20,30,40,50};
+	int index = 0;
+	for(int i:intArray)
+	{
+		  System.out.println("index 0th value is: " + intArray[index]);
+		  index++;
+	}
+	
+}
+}
+
+increment and decrement operators example(pre and post):
+```````````````````````````````````````````````````````````
+class ControlStatementsDemo
+{
+
+public static void main(String[] args){
+	
+	int x = 10;
+	System.out.println(x++);//10
+	System.out.println(x);//11
+	System.out.println(++x);//12
+	System.out.println(x--);//12
+	System.out.println(--x);//10
+	
+}
+}
+
+
+ide 
+````
+ eclipse -integrated development environment 
+ myeclipse
+ netbeans
+ intellij
+ ....
+ writing the programs in ide is very easy 
+ it gives more comfirt
+ 
+ 
+
+
+
+eclipse is an open source software 
+
+
+  -> apache software foundation 
+  
+download and install in your machiens 
+
+ 
+ 
+ 
+ https://www.eclipse.org/downloads/
+ 
+ 
+constructor:
+```````````
+method: method is the place where we are writing the logic to perform some operations 
+based on the requirement. 
+
+ without constructor example:
+ 
+ public class Test1
+{
+	int  x ,y;
+	
+	public void setValues()
+	{
+		//logic 
+		x=100;
+		y=200;
+	}
+	
+	public void display()
+	{
+		System.out.println(" x value is: " + x);
+		System.out.println(" y value is : " + y );
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();
+		obj.setValues();
+		obj.display();
+	}
+}
+
+ 
+ note:
+ if we keep initialization logic inside the constructor what is the benefit?
+ 
+  explicitly we no need to call the constructor 
+  whenever we create the object , corresponding constructor will be called 
+  and intialization logic will be done. 
+  
+  
+it is highly recommended to keep intializatin logic inside the constructor(s) 
+only. 
+
+
+public class Test1
+{
+	int  x ,y;
+	
+	//user defined default constructor 
+	public  Test1()
+	{
+		//initialization logic 
+		x=100;
+		y=200;
+	}
+	
+	public void display()
+	{
+		System.out.println(" x value is: " + x);
+		System.out.println(" y value is : " + y );
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();
+		  
+		obj.display();
+	}
+}
+	
+	
+
+note:
+in our class, if we don't define any constructor by default java compiler 
+can generate one constructor knonw as system defined default constructor 
+
+purpose: it will initilize the default values based on the datatype category.
+
+example:
+```````
+public class Test1
+{
+	int  x ,y;
+	float f;
+	String s;
+	char c;
+	boolean b;
+
+	public void display()
+	{
+		System.out.println(" x value is: " + x);
+		System.out.println(" y value is : " + y );
+		System.out.println(" float value is : " + f );
+		System.out.println("String value is : " + s );
+		System.out.println(" character value is : " + c );
+		System.out.println(" boolean default value is : " + b );
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		Test1 obj = new Test1();
+		  
+		obj.display();
+	}
+}
+	
+ parameterized constructor:
+ 
+   constructor with parameters 
+   
+example:
+```````````
+public class Test1 {
+	// class level variables
+	int a, b;
+
+	// parameterized constructor
+	public Test1(int x, int y) {
+		a = x;
+		b = y;
+	}
+
+	public void sum() {
+		System.out.println("sum is : " + (a + b));
+	}
+
+	public static void main(String[] args) {
+
+		Test1 obj = new Test1(4,5);
+		obj.sum();
+		
+	}
+}
+
+
+
+
+assignments(day-2):
+```````````````````
+Create a class named Person with attributes name and age. Then create an object of this class and print its attributes.
+
+Add a method greet to the Person class that prints a greeting message using the person's name.
+
+Create a class named Car with attributes make, model, and year. Include a method displayInfo that prints the car's details. Create an object of this class and call the displayInfo method.
+
+Create a class named BankAccount with attributes accountNumber and balance. Add methods deposit and withdraw to modify the balance. Create an object of this class and perform some transactions.
+
+Create a class named Rectangle with attributes length and width. Add methods calculateArea and calculatePerimeter to return the area and perimeter of the rectangle. Create an object of this class and calculate its area and perimeter.
+
+requirement:
+ 
+    am i able to maintain both default and parameterized constructor(s) in  
+	a single class?
+	
+	
+this:
+this is the java resreved keyword and it is always pointing to current 
+class object. 
+
+
+
+purpose:
+
+1.To differentiate class level variables and constructor/method level parameters
+ when both are same. 
+
+2.it is used to call the current class another constructor(s)
+
+syntax:  
+    this() - calling current class default constructor 
+	this(...) - calling current class parameterized constructor(s).
+	
+	
+
+ public class Test1 {
+	// class level variables
+	int a, b;
+
+	// parameterized constructor
+	public Test1(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+
+	public void sum() {
+		System.out.println("sum is : " + (this.a + this.b));
+	}
+
+	public static void main(String[] args) {
+
+		Test1 obj = new Test1(4,5);
+		obj.sum();
+		
+	}
+}
+ 
+example on multiple constructors:
+`````````````````````````````````
+public class Test1 {
+	// class level variables
+	int a, b;
+	
+	//default constructor
+	public Test1(){
+		//initialization logic
+		a=100;
+		b=200;
+	}
+
+	// parameterized constructor
+	public Test1(int a, int b) {
+		//initialization logic 
+		this.a = a;
+		this.b = b;
+	}
+
+	public void sum() {
+		System.out.println("sum is : " + (this.a + this.b));
+	}
+
+	public static void main(String[] args) {
+       //create the object using default constructor
+		Test1 obj1 = new Test1();
+		obj1.sum();
+		
+		//create the object using parameterized constructor
+		
+		Test1 obj2 = new Test1(400,500);
+		obj2.sum();
+		
+	}
+}
+  
+note:
+``````
+irresepctive of how many constructors we have inside the class, just by creating 
+the object only once, we are able to execute all the constructor(s) initalization logic(s).
+
+example:
+```````
+public class Test1 {
+	// class level variables
+	int a, b;
+	
+	//default constructor
+	public Test1(){
+		
+		//call the parameterized constructor
+		
+		this(300,400);
+		//initialization logic
+		a=100;
+		b=200;
+		this.sum();
+	}
+
+	// parameterized constructor
+	public Test1(int a, int b) {
+		//initialization logic 
+		this.a = a;
+		this.b = b;
+		//call sum()
+		this.sum();
+	}
+
+	public void sum() {
+		System.out.println("sum is : " + (this.a + this.b));
+	}
+
+	public static void main(String[] args) {
+       //create the object using default constructor
+		Test1 obj1 = new Test1();
+	
+	
+	}
+}
+
+
+class 
+object 
+instance vs static 
+constructor 
+
+   oops principles
+   
+   1.inheritance
+   2.polymorpshim
+   3.abstraction
+   4.encapsulation
+   
+inheritance:
+`````````````
+
+inheritance is the process of taking the properties from one class to another class. 
+
+
+the class which is taking the properties is known as child class. 
+the class which is giving the properties is known as parent class. 
+
+extends:
+using extends keyword we can bring the properties from parent class to child 
+class. 
+
+always we should use this extends keyword in the child class context only .
+
+
+advantages:
+1.redundancy(duplication of the code) gets decreased
+2.memory usage gets decreased
+3.performance gets increased
+4.reusability of the code. 
+
+
+Test2.java:
+```````````
+
+
+//parent class
+public class Test2 {
+
+	//business logic method
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+	
+	
+}
+
+
+
+Test3.java:
+````````````
+
+//child class
+public class Test3 extends Test2 {
+	
+
+	
+	public static void main(String[] args) {
+		
+		Test3 obj = new Test3();
+		obj.sum(4, 5);
+	}
+
+}
+
+note:
+if we use the inheritance, it is highly recommended to create the object 
+for child class only.
+because if we create the object for child class, memory locations got created
+for both parent and child class properties.
+
+
+note:
+using extends keyword at a time, we can only extending from one class only.
+
+
+
+note:
+in java, for every class there is one super class or parent class i.e 
+java.lang.Object 
+
+   
+
+
+public class Test2  {
+
+	//business logic method
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Test2 obj = new Test2();
+		obj.sum(4, 5);
+		
+		System.out.println(obj.hashCode());
+		System.out.println(obj.getClass().getName());
+		System.out.println(obj.toString());
+		
+		
+	}
+}
+
+
+
+
+
+
+encapsulation:
+``````````````
+
+Encapsulation is one of the oop principle
+
+ data hiding 
+ more control
+ data consistence
+ data integrity
+ maintainence
+ security
+ 
+ 
+ 
+definition:
+it is the process of combining or wrappingup of variables and methods into 
+a single unit. 
+
+class is the best example for encapsulation 
+
+
+example:
+```````
+
+public class Person  {
+
+	//private variables
+	private String name;
+	private int age;
+	
+	
+	//getter for name
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	//setter for name with validation 
+	
+	public void setName(String name)
+	{
+		if(name!=null && !name.trim().isEmpty())
+		{
+			this.name=name;
+		}
+		else
+		{
+			System.out.println("name cannot be null or empty");
+		}
+	}
+	
+	//getter for age
+	
+	public int getAge()
+	{
+		return age;
+	}
+	
+	//setter for age with validation 
+	public void setAge(int age) {
+		
+		if(age > 0 && age <=120) {
+			this.age=age;
+		}
+		else
+		{
+			System.out.println("age must be between 1 and 120");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		Person person = new Person();
+		person.setName("");
+		person.setAge(150);
+		System.out.println("name: " + person.getName());
+		System.out.println("age:" + person.getAge());
+	}
+	
+	
+	
+}
+
+
+note:
+if we want to make any java class as an encapsulated class. it should contains 
+
+  -private fields
+  -public setter/getter methods 
+  
+  
+   
+polymorpshim:
+`````````````
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+
+to achieve this polymorpshim in java, we have two concepts
+ 
+   1.method overloading 
+   2.method overriding 
+   
+ method overloading:
+    method name is same 
+	but parameters(type,order,no.of) are different -signature 
+	
+example:
+````````
+
+
+public class Test3{
+
+	public void operation(int x, int y)
+	{
+		System.out.println("integer sum is: " + (x+y));
+	}
+	
+	public void operation(double x, double y) {
+		System.out.println("double sum is: " + (x+y));
+	}
+	
+	public static void main(String[] args) {
+		
+		Test3 obj = new Test3();
+		obj.operation(3, 4);
+		obj.operation(4.5, 5.6);
+	}
+}
+
+	-readability will be increased
+	
+
+
+method overriding:
+
+  method name is same 
+  but logic is different from parent class to child class. 
+  
+ 
+why should i go for method overriding or when should i go for?
+
+  already logic was there in parent class 
+  which is not meeting my requirement 
+
+    ->if this is your requirement, take the same method and change the logc 
+      according to your needs. 
+
+	  
+example:
+``````````
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		//child class object 
+		Child obj = new Child();
+		obj.sum(45,3);
+		
+		
+		//parent class object
+		
+		Parent obj1 = new Parent();
+		obj1.sum(3, 4);
+		
+		
+		//runtime polymorphism
+		Parent obj2 = new Child();
+		obj2.sum(4, 5);
+		
+		
+		
+	}
+
+}
+
+
+abstraction:
+````````````
+abstraction is one of the oop principle.
+
+it is hiding internal implemenation / logic details 
+
+only it is showing necessary details services to the end user. 
+
+
+  to achieve this, we are using two concepts 
+  
+    1.abstract class 
+	2.interface 
+	
+advantage:
+   security 
+   
+   abstract class is a class which contains atleast one undefined method 
+   
+    undefined method - abstract method 
+	
+	  ->only method heading without logic 
+	  
+	  public void sum();-method heading 
+	  
+if that is common to many, better you declare that as an abstract and then 
+reuse and provide logic(s) based on their requirements.
+
+
+for abstract class, can we create the object?
+
+  no,we can't 
+  
+ ->for a single abstract class, how many implmeentation classes we can define?
+
+  as many as we want based on the requirement.
+
+example:
+``````````
+Test5.java:
+`````````
+
+public abstract class Test5 {
+	
+	public abstract void sum(int x, int y) ;
+
+}
+
+Test6.java:
+````````````
+
+//child class cum implementation class cum business logic class cum execution logic class
+public class Test6 extends Test5 {
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("sum is: " + (x+y));
+
+	}
+	
+	public static void main(String[] args) {
+		//runtime polymorphism
+		Test5 obj = new Test6();
+		obj.sum(4, 5);
+		
+	}
+
+}
+
+Test7.java:
+``````````
+
+public class Test7 extends Test5 {
+
+	@Override
+	public void sum(int x, int y) {
+		System.out.println("substraction is: " +(x-y));
+
+	}
+	
+	public static void main(String[] args) {
+		
+		Test5 obj = new Test7();
+		obj.sum(8,7);
+	}
+
+}
+
+
+  
+  
+inside an abstract class, can we define a constructor or not?
+
+yes we can 
+
+
+super() -> calling parent class default constructor 
+
+super(...) -> calling parent class parameterized constructors
+
+
+interface:
+```````````
+interface contains only abstract methods and constants.
+
+syntax:
+   interface <interfacename>
+   {
+      //constants
+	  //abstract methods
+    }
+	
+note:
+by default interface methods are public abstract 
+
+by default interface variables are public static final.
+
+in java, to declare any constant we are using final keyword.
+
+
+  int x = 100; 
+  x=x+1;//valid 
+  
+  final int x = 100;
+  x =x+1;//invalid
+  
+  
+ implements is the java reserved keyword for the purpose of taking the properties
+ from interface to class.
+ 
+ using extends kewword we can take the properties from class to class and 
+ interface to interface. 
+ 
+ 
+ can we instantiate the interface?
+ 
+  no 
+  
+ Bank.java:
+`````````````
+
+public interface Bank {
+	
+	double rateOfInterest();
+
+}
+
+
+//implementation class 
+public class SBI implements Bank{
+
+	@Override
+	public double rateOfInterest() {
+		// TODO Auto-generated method stub
+		return 4.5;
+	}
+
+}
+
+
+//implemenation class
+public class CityBank implements Bank {
+
+	@Override
+	public double rateOfInterest() {
+		// TODO Auto-generated method stub
+		return 5.8;
+	}
+
+}
+
+Test8.java:
+`````````````
+
+public class Test8 {
+	
+	public static void main(String[] args) {
+		
+		//runtime polymorphism
+		Bank sbi = new SBI();
+		Bank cb = new CityBank();
+		
+		System.out.println("sbi rate of interest is: " + sbi.rateOfInterest());
+		System.out.println("city bank rate of interst is: " + cb.rateOfInterest());
+	}
+
+}
+
+ 
+package:
+```````
+ what do you mean by pacakge?
+ 
+ package is a collection of 
+  
+     -classes 
+	 -interfaces
+	 
+	 &subpackages 
+	 
+	 
+advantage:
+ 
+   ->reusability
+   ->naming conflicts
+   
+ 
+syntax:
+
+  package <packagename>;
+  
+ 
+naming convention for package:
+
+  <reverseofcompandomainurl>.<projectname>.<modulename>;
+
+   ex:
+
+  com.wipro.banking.withdrawl;
+  com.infosys.lic.mutualfunds;
+  
+
+package p1;
+
+public class Test1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+}
+
+
+package p2;
+
+import p1.Test1;
+public class Test2 {
+
+	public static void main(String[] args) {
+		
+		
+		//create the object of Test1 class
+		
+		Test1 obj = new Test1();
+		
+		obj.sum(4, 5);
+		
+	}
+}
+
+
+if both the classes are belongs to same package import is not required. 
+if both the classes/interfaecs are belongs to different packages then import 
+is required. 
+
+syntax:
+
+    import <pacakgename>.<classname>/<interfacename>;
+	
+	import <packagename>.*;(* --> all classes/interfaces of that package gets 
+	imported)
+	
+	
+naming conflicts:
+
+note:
+by importing the main package, only main package properties gets imported
+by importing the main package, we won't get sub packages properties 
+
+if you want sub package properties, explicitly we have to import the 
+sub package .
+
+package p1;
+
+public class Test1 {
+	
+	public void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+}
+
+package p1.p2;
+
+public class Test2 {
+	
+	public void sub(int x, int y)
+	{
+		System.out.println("substraction is: " + (x-y));
+	}
+
+}
+
+package p3;
+
+import p1.*;
+import p1.p2.*;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+
+		Test1 obj = new Test1();
+		Test2 obj1 = new Test2();
+
+		obj.sum(4, 5);
+		obj1.sub(6, 5);
+
+	}
+
+}
+
+
+pre defined pacakges:
+
+ these packages are given by sunmicrosystem
+ 
+java.applet
+java.awt
+java.awt.color
+java.awt.datatransfer
+java.awt.dnd
+java.awt.event
+java.awt.font
+java.awt.geom
+java.awt.im
+java.awt.im.spi
+java.awt.image
+java.awt.image.renderable
+java.awt.print
+java.beans
+java.beans.beancontext
+java.io
+java.lang-default package 
+java.lang.annotation
+java.lang.instrument
+java.lang.invoke
+java.lang.management
+java.lang.ref
+java.lang.reflect
+java.math
+java.net
+java.nio
+java.nio.channels
+java.nio.channels.spi
+java.nio.charset
+java.nio.charset.spi
+java.nio.file
+java.nio.file.attribute
+java.nio.file.spi
+java.rmi
+java.rmi.activation
+java.rmi.dgc
+java.rmi.registry
+java.rmi.server
+java.security
+java.security.acl
+java.security.cert
+java.security.interfaces
+java.security.spec
+java.sql
+java.text
+java.text.spi
+java.time
+java.time.chrono
+java.time.format
+java.time.temporal
+java.time.zone
+java.util
+java.util.concurrent
+java.util.concurrent.atomic
+java.util.concurrent.locks
+java.util.function
+java.util.jar
+java.util.logging
+java.util.prefs
+java.util.regex
+java.util.spi
+java.util.stream
+java.util.zip
+
+
+	access modifiers:
+	
+	why?
+	
+	  these accessmodifiers are used to restrict the visibility of the data
+	  over the pacakges.
+	  
+	
+	private
+	default
+	protected
+	public 
+	
+
+private:
+only with in the class we can access
+from other class of same package also we can't access
+from different pacakge too we can't access
+ 
+package p1;
+
+public class Test1 {
+	
+	private void sum(int x, int y)
+	{
+		System.out.println("sum is: " + (x+y));
+	}
+
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		obj.sum(4, 5);
+	}
+}
+
+package p1;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		Test1 obj = new Test1();
+		//invalid : obj.sum(4,5);
+	}
+
+}
+
+
+default:
+ 
+with in the class  - yes
+from other class of same package - yes
+from different pacakge - no 
+
+protected:
+
+with in the class = yes
+from other class of same pacakge = yes
+from different package sub class - yes
+from different pacakge independent class -  no 
+
+public:
+
+  do we have any restrictions?
+   no 
+
+->universal access modifier
+   
+
+
+
+packages and acessmodifiers
+
+
+exception handling:
+````````````````````
+
+exception 
+
+if we get an exception what is the problem?
+
+while we are writing the programs, we are getting the errors 
+at 
+
+ -compiletime errors - because of syntactical mistakes
+ -runtime error - exception 
+ 
+ why we will get exception?
+ 
+    if we pass invalid input , jvm couldn't process 
+	
+	
+	100
+	
+	20
+	
+	division: 5
+	
+	100
+	
+	0
+	jvm will give you ->exception 
+	
+	
+drawbacks of getting an exception:
+
+1.program terminated abnormally.
+2.we will get system error messages which are not understandable by enduser.
+
+
+
+
+---
+--
+-- int x = 100/0;
+--
+
+
+...
+1000 lines of code 
+
+	
+ java.lang.ArithmeticException:/by zero
+ 
+ 
+to avoid these two problems, we need to handle the exceptions
+
+
+to handle the exceptions in java, we are using following keywords
+
+try
+
+catch
+
+finally
+
+throws
+
+throw
+
+
+->program will not be terminated abnormally
+->instead of getting system error messages we will get user friendly messages 
+  which are understandable by enduser.
+  
+  
+program without handling the exception(s):
+
+package com.wipro.exceptions;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		int x = 100,y=0;
+		int z = x/y;
+		System.out.println("divsion is: " + z);
+		
+	}
+}
+
+try:
+````
+purpose: to keep the problematic statements 
+
+   try
+   {
+   
+      //problematic statements 
+   }
+  
+immediate try block, we need to define catch block 
+
+catch block purpose: to catch the exception and provides user friendly message.
+
+
+syntax:
+
+    catch(<exceptionclassname> <referecenvarablename>)
+	{
+	  //user friendly message
+	}
+	
+	
+program with handling the exception:
+`````````````````````````````````````
+package com.wipro.exceptions;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		
+		
+		int x = 100,y=0;
+		try {
+		int z = x/y;
+		System.out.println("divsion is: " + z);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as denominator");
+		}
+		
+		System.out.println("rest statements exceuted");
+	}
+}
+
+
+for a single try block, we can define multiple catch blocks based on the 
+requirement. 
+
+even though we have multiple catch blocks, at  a time only one catch block 
+gets executed 
+
+
+once control came from try block to catch block, it never goes back to the 
+try block.
+
+
+
+example:
+
+package com.wipro.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter first no:");
+		int fno = s.nextInt();
+		
+		System.out.println("enter second no:");
+		int sno = s.nextInt();
+		
+		
+		int z = fno/sno;
+		System.out.println("divsion is: " + z);
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("don't enter zero as denominator");
+		}
+		
+		catch(InputMismatchException im)
+		{
+			System.out.println("please pass only numeric values");
+		}
+		
+		System.out.println("rest statements exceuted");
+	}
+}
+
+ 
+
+->unchecked exceptions -> 
+    RuntimeException -> 
+	Exception -> 
+	Throwable 
+    Object 
+  
+  we have mainly two types of exceptions 
+  
+    unchecked exceptions ->at runtime 
+	checked exception -> checked by java compiler 
+	
+->while we are handling the exceptions , the order must be from 
+specific to general not from general to specific , if we do like that 
+we will get compile time error saying that unreachable code to the java compiler.
+
+
+package com.wipro.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter first no:");
+		int fno = s.nextInt();
+		
+		System.out.println("enter second no:");
+		int sno = s.nextInt();
+		
+		
+		int z = fno/sno;
+		System.out.println("divsion is: " + z);
+		}
+		catch(RuntimeException re)
+		{
+			if(re instanceof ArithmeticException)
+			{
+				System.out.println("dont enter zero as a denominator");
+			}
+			else if(re instanceof InputMismatchException)
+			{
+				System.out.println("please pass only numeric values");
+			}
+		}
+				System.out.println("rest statements exceuted");
+	}
+}
+
+finally:
+````````
+  finally block is used to relinquish the resources
+  
+     -> closing related logic inside the finally block .
+	 
+	 ex: database connection closing logic, 
+	 file closing logic. etc..
+	 
+	 
+	 
+example:
+`````````
+package com.wipro.exceptions;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Test1 {
+
+	
+	public static void main(String[] args) {
+		
+		try {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter first no:");
+		int fno = s.nextInt();
+		
+		System.out.println("enter second no:");
+		int sno = s.nextInt();
+		
+		
+		int z = fno/sno;
+		System.out.println("divsion is: " + z);
+		}
+		catch(RuntimeException re)
+		{
+			if(re instanceof ArithmeticException)
+			{
+				System.out.println("dont enter zero as a denominator");
+			}
+			else if(re instanceof InputMismatchException)
+			{
+				System.out.println("please pass only numeric values");
+			}
+		}
+		
+		finally
+		{
+			System.out.println("finally block gets executed always");
+		}
+		
+		System.out.println("rest statements exceuted");
+	}
+}
+
+	 
+throws:
+````````
+throws is a java reserved keyword which gives an indication to the 
+calling function to keep the called function under try and catch block.
+
+using throws keyword, we can declare an exception 
+
+package com.wipro.exceptions;
+
+//called program
+public class Test3 {
+	
+	//called function 
+	public void division() throws ArithmeticException
+	{
+		int x =100/0;
+		System.out.println("division is: " + x);
+	}
+
+}
+
+
+package com.wipro.exceptions;
+//calling program
+public class Test4 {
+	
+	//calling function 
+	public static void main(String[] args) {
+		
+		Test3 obj = new Test3();
+		
+		try
+		{
+			obj.division();
+		}
+		catch(ArithmeticException ae)
+		{
+			System.out.println("something problem in division method, check it once");
+		}
+		
+	}
+
+}
+
+
+
+throw:
+``````
+
+throw is a java reserved keyword
+
+purpose: it is used to throw an exception explicitly.
+
+
+
+  100
+  0
+  
+     -> which exception will be thrown by jvm?
+	 
+	   ArithmeticException ae = new ArithmeticException();
+	   
+  100
+  abc
+       InputMismatchException
+	   
+	   
+all these predefined exceptions can be thrown by the jvm when it met 
+some universal condition.
+
+	   
+using throw keyword , we can throw an excpetion explicitly.
+
+syntax:
+   
+      throw new <exceptionclassname>();
+	  
+	
+requirement:
+	
+	  if name starts with r 
+	  i want to throw ArithmeticException
+	  
+	  
+can we throw predfined exceptions?
+
+yes
+package com.wipro.exceptions;
+
+import java.util.Scanner;
+
+public class Test5 {
+	
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter name");
+		
+		String name = s.nextLine();
+		if(name.startsWith("r"))
+		{
+			try {
+			throw new ArithmeticException();
+			}
+			catch(ArithmeticException ae)
+			{
+				System.out.println("name should not start with r");
+			}
+		}
+		else
+		{
+			System.out.println("welcome to " + name);
+		}
+	}
+
+}
+
+note:
+but throwing predefined exception explicitly doesn't makes sense.
+
+
+reason:
+using throw keyword we can throw our own exception explicitly when it met 
+our condition.
+
+
+custom exceptions.
+
+
+
+Test6.java:
+````````````
+package com.wipro.exceptions;
+//business logic class
+public class Test6 {
+	
+	public void checkProduct(int weight) 
+	{
+		
+		if(weight>100)
+		{
+			System.out.println("product is valid");
+		}
+		else
+		{
+			try {
+			throw new InvalidProductException();
+			}
+			catch(InvalidProductException ie)
+			{
+				System.out.println("please check product weight, it must be greater than 100kgs");
+			}
+		}
+		}
+		
+	
+
+}
+
+package com.wipro.exceptions;
+
+//exception class
+public class InvalidProductException extends Exception {
+
+}
+
+Test7.java:
+```````````
+package com.wipro.exceptions;
+
+import java.util.Scanner;
+
+//execution logic class
+public class Test7 {
+
+	 public static void main(String[] args) {
+		
+		 Scanner s  = new Scanner(System.in);
+		 
+		 System.out.println("enter the product weight ");
+		 int weight = s.nextInt();
+		 
+		 Test6 obj = new Test6();
+		 
+		 obj.checkProduct(weight);
+		 
+		 
+	}
+}
+
+junit:
+```````
+junit:
+``````
+ 
+what is unit testing and why?
+``````````````````````````````
+as a programmer we are writing the code
+as a tester we are testing the code
+
+once programmer completes his code
+before you move your code from dev
+environment to qa environment we have to test ourcode whether it is correct
+or not?
+
+ ->developer
+ 
+what is unittesting and why?
+````````````````````````````
+unit testing is a type of software testing where individual units or
+components of a software are tested.
+
+The purpose is to validate that each unit of the software code
+performs as expected.
+
+unit testing is done during the development of an application 
+by the developers.
+
+unit tests isolate a section of code and verify it's correctness.
+
+A unit may be an individual function , method, procedure, modulename
+or object.
+
+
+what is junit?
+```````````````
+->junit is a free and open source unit testing framework for java applications.
+
+->junit was developed by kentback and erichgamma.
+
+->it's first version was released in 1997
+    2000 - junit.org website launched
+
+    2006 - junit 4 got launched 
+
+    2015 -junit lambda project
+
+
+    2017 - junit 5 version 
+
+
+
+->it became one of the most popular testing frameorks in the java 
+  community due to its ease of use.
+  
+->it is a lightweight testing framework which allowed java developers to 
+  write unit test cases in java language.
+  
+->the current version of junit is 5.
+
+
+
+
+ junit -> jar file -> 
+  
+  
+package com.capg.jse.junit;
+
+public class Calculator {
+	
+	//business logic method 1
+	public int add(int x, int y)
+	{
+		return x+y;
+	}
+	//business logic method 2
+	public int mul(int x, int y)
+	{
+		return x*y;
+	}
+
+}
+
+CalculatorTest.java:
+`````````````````````
+package com.capg.jse.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CalculatorTest {
+
+	
+	private static Calculator obj = null;
+	
+	@BeforeClass
+	public static void init()
+	{
+		obj=new Calculator();
+	}
+	
+	@AfterClass
+	public static void destroy()
+	{
+		obj=null;
+	}
+	@Test
+    public void testAdd()
+    {
+    	
+    	int actualResult = obj.add(10,20);
+    	int expectedResult = 30;
+    	assertEquals(expectedResult, actualResult);
+    }
+	
+	
+	@Test
+	public void testMul()
+	{
+		
+		
+		int actualResult = obj.mul(10,20);
+		int expectedResult = 2000;
+		assertEquals(expectedResult, actualResult);
+		
+	}
+	
+	
+}
+
+
+junit5 architecture:
+````````````````````
+
+Junit 5 Architecture mainly divide in three modules:
+
+JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
+
+
+junit annotations:
+```````````````````
+@Test-to mark a method as test case method
+@BeforeEach-before executing each and every test case method
+@AfterEach-after executing each and every test case method
+@BeforeAll-5 test case -1's
+@AfterAll-1 time 
+@ParameterizedTest
+
+@ValueSource
+@CsvFileSource
+@Disabled
+
+....
+
+junit Assertions:
+```````````````````
+to refer junit5 api official documentation use the below url
+
+https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
+
+->junit5 asseertions help us in validating the expected output with 
+  the actual output of a test case.
+  
+->in short, assertions are nothing but static methods that we call in our 
+  tests to verify expected behaviour.
+
+->All Junit jupiter assertions are present in the 
+  org.junit.jupiter.api.Assertions class
+  
+  
+ Junit Assertion Methods:
+ `````````````````````````
+ assertEquals and assertNotEquals
+ assertTrue and assertFalse
+ assertNull and assertNotNull
+ assertSame and assertNotSame
+ assertThrows
+ 
+ ....
+ 
+example:
+````````
+package com.capg.jse.junit;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class CalculatorTest2 {
+
+	@BeforeEach
+	public void beforeEach() {
+		System.out.println("before each method executed");
+	}
+
+	@AfterEach
+	public void afterEach() {
+		System.out.println("after each method executed");
+	}
+
+	@Test
+	@DisplayName("testing test1 method")
+	public void test1() {
+		System.out.println("iam test1 method executed");
+	}
+
+	@Test
+	@Disabled
+	public void test2() {
+		System.out.println("iam test2 method executed");
+	}
+	@BeforeAll
+	public static void beforeAll()
+	{
+		System.out.println("iam executed before but only once");
+	}
+	@AfterAll
+	public static void afterAll()
+	{
+		System.out.println("iam executed after all test but only once");
+	}
+}
+
+
+
+Calculator.java:
+``````````````````
+package com.wipro.junit5;
+
+public class Calculator {
+	
+	public int sum(int x, int y)
+	{
+		return x+y;
+	}
+	
+	public int mul(int x, int y)
+	{
+		return x*y;
+	}
+
+}
+
+TestCalculator.java:
+`````````````````````
+package com.wipro.junit5.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+import com.wipro.junit5.Calculator;
+
+class TestCalculator {
+	
+	private static Calculator obj = null;
+	
+	@BeforeAll
+    public static void setUp()
+     {
+		obj = new Calculator();
+     }
+	
+	
+	@Test
+	void testSum() {
+		
+		//assertTrue(false);
+		//assertEquals(3, 2*2);
+		//Calculator obj = new Calculator();
+		int actualValue = obj.sum(3, 4);
+		
+		assertEquals(7, actualValue);
+	}
+	
+	@Test
+	void testMul()
+	{
+		//Calculator obj = new Calculator();
+		int actualValue = obj.mul(3, 4);
+		assertEquals(12, actualValue);
+	}
+	
+	@AfterAll
+	public static void destroy()
+	{
+		obj = null;
+	}
+	
+
+}
+
+
+collection framework in java:
+```````````````````````````````
+
+ int x = 100;
+ 
+ int y = 200;
+ 
+ int z = 300;
+ 
+ 
+1000 values -> 1000 variables 
+
+    int x[]  = {100,200,300};
+
+
+	using arrays, we can store multiple values in a single variable.
+	
+	while we are storign the values inside an array, those are stored based 
+	on the index 
+	
+	index always starts from 0 th locatin.
+	
+	we can store only homogenious type of data. 
+	arrays size is fixed in nature you can't increase or decreasee the size 
+    arrays are not following propert ds 
+	if we want to perform any operations in arrays, we have to write the logic 
+	manually means we don't have any ready made methods.
+	
+	to avoid these drawbacks, we should go for collection framework in java. 
+	
+	
+	->to organize the data in an effective manner 
+	
+	read
+	delete 
+	create 
+	update 
+	   -> organizing the data 
+	   
+	   
+	   
+	   int x[]=new int[4];
+	   
+	   
+	->collections size is not fixed, it is growable in nature
+	->cfw contains ready made methods to perform fundamental oeprations 
+	->cfw internally follows very good ds.
+	->using collections, we can store both homogenious and heterogenious data. 
+	
+	
+	
+	to achieve these things practically, 
+	   sunmicrosystem people gave some interfacs and some implmentation 
+	   classes given to the developers 
+	   
+	   all those are available in java.util pacakge. 
+	   
+	   
+	   make sure while we are writing the programs, we have to import this 
+	   pacake. 
+	   
+	   
+->default imported package to every java application - java.lang 
+
+java.util package 
+
+->Collection 
+ ->List
+ ->Set 
+ ->Queue
+ ->SortedSet
+ 
+ 
+Collection is the root interface.
+for the Collection interface 
+
+why the made this Collection interfae as root interface?
+   
+     this interface contains some fundamental methods which can be applicable 
+	 to every collection. 
+	 
+	     add()
+		 remove()
+		 ...
+		 
+for Collection interface, we don't have any direct implementation class. 
+
+		 
+  List:
+
+   interface List extends Collection 
+   {
+   }   
+
+List interface contains all the Collection interface methods + List interface 
+methods also. 
+
+
+		-Vector
+		-Stack 
+		
+	-ArrayList
+	-LinkedList
+	
+    List l = new ArrayList();
+	ArrayList al = new ArrayList();
+	List l1 = new LinkedList();
+	
+
+when should i go for List interface:
+
+   ->we can add both homogenious and heterogenious elements 
+   ->insertion order is preserved 
+   ->duplicates are allowed 
+   ->null insertion is also possible.
+   
+ example:
+```````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Test1 {
+	
+	 public static void main(String[] args) {
+		
+		 
+		 //create the object for List interface (ArrayList)
+		 List l = new ArrayList();
+		 
+			/*
+			 * l.add(Integer.valueOf(23)); 
+			 * l.add(new String("rama"));
+			 * l.add(Boolean.valueOf(true));
+			 *  l.add(Character.valueOf('a')); 
+			 *  l.add(null);
+			 * l.add(Integer.valueOf(23));
+			 */
+		 
+		 l.add(23);
+		 l.add("rama");
+		   l.add(true);
+		 l.add('a');
+		 l.add(null);
+		 l.add(23);
+		 
+		 System.out.println(l);
+		 System.out.println(l.get(2));
+		 System.out.println(l.size());
+		 System.out.println(l.contains("ram"));
+		 System.out.println(l.indexOf(null));
+		 System.out.println(l.isEmpty());
+		 //l.clear();
+		 //System.out.println(l.isEmpty());
+		 //System.out.println(l.size());
+		 //System.out.println(l);
+		 
+		
+		 
+		 for(Object o:l)
+		 {
+			 System.out.println(o);
+		 }
+		 
+		 
+		 
+		 
+		 
+	}
+
+}
+
+do the same program w.r.to LinkedList
+ 
+ try to observe the difference between ArrayList and LinkedList
+ 
+ Set:
+    
+	Set is the predefined interface available in java.util package 
+	
+	 
+	  interface Set extends Collection 
+	  {
+	  }
+	  
+	 ->HashSet
+	 ->LinkedHashSet
+	 
+	 
+creating the object for Set interface is nothing but creating an object 
+for its implemenation classes based on the requirement. 
+
+->insertion order is not preserved
+->it allows both homogenious and heterogenious objects
+->null insertion is possible but only for once
+->duplicates are not allowed 
+
+
+package com.wipro.cfw;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		
+		//creating the object for Set interface
+		
+		
+		Set s = new LinkedHashSet();//CTRL + SHIFT + O
+		
+	s.add(23);
+	s.add(23);
+	s.add(true);
+	s.add("rama");
+	s.add(null);
+	s.add(null);
+	
+	 for(Object o: s)
+	 {
+		 System.out.println(o);
+	 }
+		
+	}
+
+}
+
+note:
+in case of HashSet , insertion order is not preserved
+in case of LinkedHashSet, insertion order is preserved 
+reamining properties are same. 
+
+
+
+SorteSet:
+
+   SortedSet is also an interface 
+   
+      ->java.util package
+	  
+	interface SortedSet extends Set extends Collection
+    {
+    }
+
+->it allows only homogenious objects and aswell as it should be comparable objects
+->we can get the data in sorting order 
+   natural order sorting  -> ascending / alphabetical 
+->null insertion is not possible 
+->duplicates are not allowed
+
+
+   ->TreeSet
+   
+   
+   SortedSet s = new TreeSet();
+
+
+package com.wipro.cfw;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		//create the objecct for TreeSet
+		
+		SortedSet s = new TreeSet();
+		s.add(34);
+		s.add(8);
+		s.add(-9);
+		s.add(897);
+		s.add(450);
+		//s.add(null);//NullPointerException 
+		//s.add("rama");//ClassCastException 
+		s.add(34);
+	
+		for(Object o : s)
+		{
+			System.out.println(o);
+		}
+		
+	}
+
+}
+
+
+how to add the customobject to any collection object:
+``````````````````````````````````````````````````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the object for ArrayList
+		
+		ArrayList al = new ArrayList();
+		
+		Student st1 = new Student(100,"kiran");
+		Student st2 = new Student(300,"vinayak");
+		Student st3 = new Student(500,"priyansh");
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Object o: al)
+		{
+			//convert this Object type to Student type (parent to child type)-down casting
+			Student stu = (Student)o;
+			
+			if(stu.getStid()==300)
+			{
+				System.out.println("student name whose student id value 300 is: " + stu.getStname());
+			}
+			
+		}
+		
+		
+	}
+
+}
+
+Student.java:
+``````````````
+package com.wipro.cfw;
+
+public class Student {
+
+	private int stid;
+	private String stname;
+	
+	public int getStid() {
+		return stid;
+	}
+	public void setStid(int stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid + " " + stname;
+	}
+	
+	
+	
+}
+
+
+
+
+Comparable object:
+```````````````````
+package com.wipro.cfw;
+
+import java.util.TreeSet;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the object for TreeSet
+		
+		TreeSet al = new TreeSet();
+		
+		Student st2 = new Student(300,"vinayak");
+		Student st3 = new Student(500,"priyansh");
+		Student st1 = new Student(100,"kiran");
+		
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Object o: al)
+		{
+			System.out.println(o);
+			
+		}
+		
+		
+	}
+
+}
+
+Student.java:
+````````````````
+package com.wipro.cfw;
+
+public class Student implements Comparable{
+
+	private Integer stid;
+	private String stname;
+	
+	public Integer getStid() {
+		return stid;
+	}
+	public void setStid(Integer stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid + " " + stname;
+	}
+	@Override
+	public int compareTo(Object o) {
+		
+		Student s = (Student)o;
+		
+		//return this.getStid().compareTo(s.getStid());
+		return this.getStname().compareTo(s.getStname());
+	}
+	
+	
+	
+}
+
+
+
+note:
+by default all the wrapper types are Comparable objects, that is the reason 
+we are allowed to add these objects to SorteSet object.
+
+to make normal class as Comparable class, make sure we have to define the class
+must be implementing from Comparable interface and then we should provide the 
+logic for compareTo()
+
+otherwise reuse the existing logic from any wrapper classe(s).
+
+
+
+Comparator:
+```````````
+Comparator is the predefined interface available in java.util package 
+
+it contains one abstract method  - compare(Object o1, Object o2)
+
+
+->to get the data in our customized order -> we need to pass Comparator object 
+to the TreeSet 
+
+->if we want to get the data in natural sorting order -> Comparable object 
+
+
+Comparable meant for natural sorting order 
+Comparator meant for custom order. 
+
+
+package com.wipro.cfw;
+
+import java.util.Comparator;
+
+public class StudentIdComparator implements Comparator{
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		
+		Student st1 = (Student)o1;
+		Student st2 = (Student)o2;
+		
+		/*
+		 * if(st1.getStid()>st2.getStid()) { return -4; } else
+		 * if(st1.getStid()<st2.getStid()) { return +4; } else { return 0; }
+		 */
+		
+		return st2.getStid().compareTo(st1.getStid());
+		
+	}
+
+	
+	
+}
+
+	
+package com.wipro.cfw;
+
+import java.util.Comparator;
+
+public class StudentNameComparator implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		
+		Student st1 = (Student)o1;
+		Student st2 = (Student)o2;
+		
+		return st2.getStname().compareTo(st1.getStname());
+		
+	}
+
+}
+
+package com.wipro.cfw;
+
+import java.util.TreeSet;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the object for TreeSet
+		
+		TreeSet al = new TreeSet(new StudentNameComparator());
+		
+		
+		Student st3 = new Student(500,"priyansh");
+		Student st1 = new Student(100,"kiran");
+		Student st2 = new Student(300,"vinayak");
+		
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Object o: al)
+		{
+			System.out.println(o);
+			
+		}
+		
+		
+	}
+
+}
+
+
+	
+	Generics concept:
+	
+	without generics:
+	
+	  1.we are getting runtime errors
+	  2.type casting is required.
+	  
+	  
+	with generics:
+	
+	  1.we are getting compile time errors which are far better than run time 
+	    errors
+	  2.type casting is not required.
+	  
+	  
+	how?
+	
+	   syntax:
+	   
+	      ArrayList<Integer> al = new ArrayList();
+without generics:
+````````````````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> al = new ArrayList();
+		
+		for(int i=1;i<=10;i++)
+		{
+			al.add(i);
+		}
+		
+		al.add("ram");//runtime error - java.lang.ClassCastException
+		
+		for(Object o: al)
+		{
+			if((Integer)o%2!=0)
+			{
+				System.out.println(o);
+			}
+		}
+	}
+
+}
+
+		  
+		  
+with generics example:
+````````````````````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> al = new ArrayList();
+		
+		for(int i=1;i<=10;i++)
+		{
+			al.add(i);
+		}
+		
+		//al.add("ram");
+		
+		for(Integer o: al)
+		{
+			if(o%2!=0)
+			{
+				System.out.println(o);
+			}
+		}
+	}
+
+}
+
+	
+using generics adding custom object to collection object:
+`````````````````````````````````````````````````````````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+
+public class Test6 {
+	
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Student> al = new ArrayList();
+		
+		Student st1 = new Student(100,"kiran");
+		Student st2 = new Student(101,"john");
+		Student st3 = new Student(102,"pavan");
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Student st:al)
+		{
+			System.out.println(st);
+		}
+		
+		
+	}
+
+}
+
+applying generics to the Comaprable object:
+```````````````````````````````````````````
+package com.wipro.cfw;
+
+public class Student implements Comparable<Student>{
+
+	private Integer stid;
+	private String stname;
+	
+	public Integer getStid() {
+		return stid;
+	}
+	public void setStid(Integer stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return stid + " " + stname;
+	}
+	@Override
+	public int compareTo(Student o) {
+		
+		//Student s = (Student)o;
+		
+		//return this.getStid().compareTo(s.getStid());
+		return this.getStname().compareTo(o.getStname());
+		
+	}
+	
+	
+	
+}
+	
+Test4.java:
+```````````
+package com.wipro.cfw;
+
+import java.util.TreeSet;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the object for TreeSet
+		
+		TreeSet al = new TreeSet();
+		
+		
+		Student st3 = new Student(500,"priyansh");
+		Student st1 = new Student(100,"kiran");
+		Student st2 = new Student(300,"vinayak");
+		
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Object o: al)
+		{
+			System.out.println(o);
+			
+		}
+		
+		
+	}
+
+}
+
+
+applying generics to the Comparator object:
+`````````````````````````````````````````
+package com.wipro.cfw;
+
+import java.util.Comparator;
+
+public class StudentIdComparator implements Comparator<Student>{
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		
+		//Student st1 = (Student)o1;
+		//Student st2 = (Student)o2;
+		
+		/*
+		 * if(st1.getStid()>st2.getStid()) { return -4; } else
+		 * if(st1.getStid()<st2.getStid()) { return +4; } else { return 0; }
+		 */
+		
+		return o2.getStid().compareTo(o1.getStid());
+		
+	}
+
+	
+	
+}
+
+Test4.java:
+``````````````
+package com.wipro.cfw;
+
+import java.util.TreeSet;
+
+public class Test4 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create the object for TreeSet
+		
+		TreeSet<Student> al = new TreeSet(new StudentIdComparator());
+		
+		
+		Student st3 = new Student(500,"priyansh");
+		Student st1 = new Student(100,"kiran");
+		Student st2 = new Student(300,"vinayak");
+		
+		
+		al.add(st1);
+		al.add(st2);
+		al.add(st3);
+		
+		for(Student o: al)
+		{
+			System.out.println(o);
+			
+		}
+		
+		
+	}
+
+}
+
+	
+Map interface:
+`````````````````
+(key,value) pair - entry 
+
+  then we can use Map interface.
+
+ key - object 
+
+ value - object 
+
+   al.add(.); only one object 
+   
+    
+->it allows any type of object as a key object and value object that means 
+both key and value objects are allowing heterogenious objects.
+
+->insertion order is not preserved
+
+->null value insertion is posssible 
+
+->duplicate value objects are allowed but duplicate key objects are not allowed
+
+	
+	
+	package com.wipro.cfw;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create an object for Map interface
+		
+		Map m = new HashMap();
+		
+		m.put(100,"ram");
+		
+		m.put("rk", 101);
+		
+		m.put('a', 4.5);
+		
+		m.put(null, null);
+		
+		m.put(9.3f, null);
+		
+		m.put(101, "ram");
+		
+		m.put(100, "priyansh");
+	
+		System.out.println(m);
+		
+	}
+
+}
+
+
+----------
+package com.wipro.cfw;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create an object for Map interface
+		
+		Map m = new HashMap();
+		
+		m.put(100,"ram");
+		
+		m.put("rk", 101);
+		
+		m.put('a', 4.5);
+		
+		m.put(null, null);
+		
+		m.put(9.3f, null);
+		
+		m.put(101, "ram");
+		
+		m.put(100, "priyansh");
+		
+		System.out.println("size is :  "+ m.size());
+		
+		System.out.println(m.containsKey(1000));
+		
+		System.out.println(m.containsValue("priyansh"));
+		
+		System.out.println(m.get(1011));//null
+		
+		
+		System.out.println(m.remove(101));//ram
+		
+		System.out.println(m.remove(1012));
+		
+		System.out.println(m.size());
+		
+		System.out.println(m.isEmpty());
+		
+		/*Set s = m.entrySet();
+		
+		System.out.println(s);//[]
+		
+		for(Object o:s)
+		{
+			System.out.println(o);
+		}
+		*/
+		
+		for(Object me:m.entrySet()) {
+			
+			//cast the Object to a Map.Entry
+			
+			Map.Entry entry = (Map.Entry)me;
+			
+			Object key = entry.getKey();
+			Object value = entry.getValue();
+			
+			System.out.println("Key:" + key + ", Value:" + value );
+			
+		}
+		
+	}
+
+}
+
+
+HashMap ->insertion order is not preserved
+LinkedHashMap -> insertion order is preserved 
+
+package com.wipro.cfw;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Test7 {
+	
+	public static void main(String[] args) {
+		
+		
+		//create an object for Map interface
+		
+		Map<Integer,Student> m = new HashMap();
+		
+		
+		m.put(56, new Student(78,"john"));
+		m.put(1, new Student(100,"ram"));
+		m.put(23, new Student(45,"williams"));
+		m.put(2, new Student(101,"smith"));
+		
+		
+		
+		for(Map.Entry<Integer,Student> me: m.entrySet())
+		{
+			System.out.println(me.getKey() + "==> " + me.getValue().getStname() + "==> " + me.getValue().getStid());
+			
+		}
+		
+	}
+
+}
+
+
+
+SortedMap:
+```````````
+interface SortedMap extends Map
+{
+}
+
+
+  ->TreeMap 
+  
+  
+package com.wipro.cfw;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Test8 {
+
+	
+	public static void main(String[] args) {
+		
+		//create the object for SortedMap
+		
+		SortedMap<Student,Integer> sm = new TreeMap();
+		
+		sm.put(new Student(1,"rk"), 100);
+		sm.put(new Student(-3,"smith"),34);
+		sm.put(new Student(22,"john"), 12);
+		
+		System.out.println(sm);
+		
+	}
+}
+
+----
+package com.wipro.cfw;
+
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Test8 {
+
+	
+	public static void main(String[] args) {
+		
+		//create the object for SortedMap
+		
+		SortedMap<Student,Integer> sm = new TreeMap(new StudentIdComparator());
+		
+		sm.put(new Student(1,"rk"), 100);
+		sm.put(new Student(-3,"smith"),34);
+		sm.put(new Student(22,"john"), 12);
+		
+		System.out.println(sm);
+		
+	}
+}
+
+
+->refer SortedSet we have some special methods (headSet(),tailSet(),subSet()...)
+->refer SortedMap ->we have some special methods 
+
+   
+
+cursors in collectin f/want
+
+
+->Iterator
+->ListIterator
+
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+		for(int i=1;i<=10;i++) {
+			al.add(i);
+		}
+		
+		Iterator<Integer> itr = al.iterator();
+		
+		while(itr.hasNext())
+		{
+			
+		    int x = itr.next();
+			if(x%2!=0)
+			{
+				itr.remove();
+			}
+		}
+		
+		System.out.println(al);//[2,4,6,8,10]
+		
+	}
+
+}
+
+
+Iterator is one of the predefined interface available in java.util pacakge 
+
+  ->universal cursor 
+  
+  in any collection class , we have iterator() 
+  
+  you can apply this Iterator on top of any collection class. 
+  
+  single direction cursor only .
+  
+  
+  requirement:
+  
+     forward & backward 
+	 insertion 
+	 deletion 
+	 updation 
+	 
+example:
+``````````
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+		for(int i=1;i<=10;i++) {
+			al.add(i);
+		}
+		
+		Iterator<Integer> itr = al.iterator();
+		
+		while(itr.hasNext())
+		{
+			
+		    int x = itr.next();
+			if(x%2!=0)
+			{
+				itr.remove();
+			}
+		}
+		
+		System.out.println(al);//[2,4,6,8,10]
+		
+	}
+
+}
+
+
+
+ListIterator
+
+interface -java.util 
+
+but make sure we can apply this ListIterator only on top of list realated 
+implementation classes. 
+
+  listIterator()-ListIterator 
+  
+  
+package com.wipro.cfw;
+
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class Test9 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+		for(int i=1;i<=10;i++)
+		{
+			al.add(i);
+		}
+		
+		
+		ListIterator<Integer> ltr = al.listIterator();
+		
+		System.out.println("retrieving the elements in forward direction");
+		while(ltr.hasNext())
+		{
+			System.out.println(ltr.next());
+		}
+		
+		System.out.println("retreiving the elements in backward direction ");
+		
+		while(ltr.hasPrevious())
+		{
+			System.out.println(ltr.previous());
+			
+			
+		}
+		
+	}
+
+}
+
+
+assignments:
+```````````````
+ArrayList Manipulation:
+
+Write a program to create an ArrayList of integers. Add ten random integers to the list. Write methods to perform the following operations:
+Find the maximum and minimum value in the list.
+Sort the list in ascending and descending order.
+Remove duplicate elements from the list.
+HashSet Usage:
+
+Create a HashSet of strings. Add five unique strings and three duplicate strings to the set. Write a method to:
+Print all unique strings.
+Check if a specific string is present in the set.
+LinkedList Operations:
+
+Implement a LinkedList of custom objects (e.g., Student class with fields id, name, grade). Write methods to:
+Add a new student to the list.
+Remove a student by their id.
+Find a student by their name.
+	
+	
+TreeMap Example:
+
+Create a TreeMap to store student names (as keys) and their scores (as values). Write methods to:
+Add new students and their scores.
+Find the student with the highest score.
+Display the students and their scores in descending order of scores.	
+	
+
+lamda expression:
+
+java 1.8 features 
+
+
+  interface 
+   -only abstract methods 
+   
+   if an interface contains only single abstract method 
+   ->functional interfaces. 
+   
+     functional method 
+
+
+we can define default methods and we can define static methods 
+also. 
+
+package com.wipro.java8;
+
+public interface i1 {
+
+	//default method
+	 default void m1()
+	{
+		System.out.println("default method");
+	}
+	
+	//static method
+	static void m2()
+	{
+		System.out.println("static method");
+	}
+	
+	public static void main(String[] args) {
+		i1.m2();
+		
+		
+	}
+}
+
+
+i1Impl.java:
+``````````
+package com.wipro.java8;
+
+public class i1Impl implements i1 {
+	
+	public static void main(String[] args) {
+		
+		i1 obj = new i1Impl();
+		obj.m1();
+		
+		//calling static method 
+		i1.m2();
+	}
+
+}
+
+
+using lambda expression:
+``````````````````````````
+package com.wipro.java8;
+
+@FunctionalInterface
+public interface i2 {
+	
+	void sum(int x, int y);
+	
+}
+
+
+Test1.java:
+`````````
+package com.wipro.java8;
+
+public class Test1 {
+	//void sum(int x, int y);
+	public static void main(String[] args) {
+		
+		i2 obj = (x,y)->System.out.println(x+y);
+		
+		obj.sum(3, 4);
+		
+	}
+
+}
+
+
+---------------
+package com.wipro.java8;
+
+import java.util.TreeSet;
+
+
+
+public class Test2 {
+
+	
+	public static void main(String[] args) {
+		//int compare(T o1, T o2);
+		TreeSet<Student> ts = new TreeSet<Student>((x,y)-> x.getStid().compareTo(y.getStid()));
+		
+		Student st1 = new Student(101,"kiran");
+		Student st2 = new Student(78,"rizwana");
+		
+		Student st3 = new Student(74,"aman");
+		
+		ts.add(st1);
+		ts.add(st2);
+		ts.add(st3);
+		
+		System.out.println(ts);
+		
+		
+	}
+}
+
+
+Student.java:
+```````````````
+package com.wipro.java8;
+
+public class Student {
+	
+	private Integer stid;
+	private String stname;
+	public Integer getStid() {
+		return stid;
+	}
+	public void setStid(Integer stid) {
+		this.stid = stid;
+	}
+	public String getStname() {
+		return stname;
+	}
+	public void setStname(String stname) {
+		this.stname = stname;
+	}
+	public Student(int stid, String stname) {
+		super();
+		this.stid = stid;
+		this.stname = stname;
+	}
+	@Override
+	public String toString() {
+		return stid + " " + stname;
+	}
+	
+	
+
+}
+
+
+
+oracle:
+`````````
+create table student(stid number(5),stname varchar2(20));
+
+table created
+
+select * from student;
+
+no rows selected
+
+how to insert the data into the table?
+
+  insert into student values(100,'ram');
+  1 row inserted 
+  
+  where clause we are using for filtering the data
+  
+  select * from student where stid = 101;
+  
+  
+update:
+``````
+ update student set stname='kiran' where stid = 102;
+ 
+ 
+delete from student -> all rows will be deleted
+
+delete from student where stid=102;//only specific row will be deleted
+
+commit:
+  commit command is used to save the changes permanently into the db
+  
+  rollback command is used to alter the changes back 
+  
+  before commit only we have to rollback otherwise there is no use.
+  
+  all the dml statements by default are not autocommited statements. 
+  to make it commit explicitly we have to give commit as the command 
+  
+  -ddl commands (data defintion language)
+  
+create the table
+drop the table
+alter the table 
+truncate the table 
+rename the table 
+
+
+
+by using alter we can do these operations 
+
+alter table student add staddress varchar2(30);
+
+alter table student drop column staddress;
+
+alter table student rename column stid to student_id;
+
+
+as a java programmer how can you perform these db operations?
+
+
+     ->by writing jdbc programs 
+	 
+	 
+jdbc 
+
+   java database connectivity
+   
+  jdbc -> technology / speciification ->interfaces 
+  
+  
+    sunmicrosystem
+	
+	implementations are provided by different db vendors
+	
+	and they have released in the form of jar files. 
+	
+	
+jdbc + oracle (ojdbc6.jar)
+
+jdbc + mysql (mysqlconnector.jar)
+
+
+steps to follow to write the jdbc program?
+```````````````````````````````````````````
+
+make sure while we are working with jdbc, we need to import java.sql package 
+
+
+1.load the driver class. 
+
+
+driver class is acting as an interface 
+
+    oracle.jdbc.driver.OracleDriver
+	
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	
+2.get the connection 
+
+
+   DriverManager.getConnection("url","username","password");	
+
+   Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+   
+3.create the Statement object for sending sql statements to the db.
+
+   Statement st  = con.createStatement();
+   
+   
+4.process the queries
+
+
+   int x =  st.executeUpdate("insert/update/delete");
+	
+5.close the connection 
+
+    con.close();
+	
+	
+example:
+````````
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Test1 {
+	
+	
+	public static void main(String[] args) {
+		try {
+		
+		//load the driver class
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		System.out.println("driver class loaded");
+		
+		//get the connection 
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+		
+		System.out.println("i got the connection");
+		
+		
+		//send the sql queries - create the Statement object
+		
+		Statement st  = con.createStatement();
+		
+		
+		//create the query and process it 
+		
+		int x = st.executeUpdate("insert into student values(103,'kiran')");
+		
+		System.out.println(x + "row(s) inserted");
+		
+		//close the connection 
+		
+		con.close();
+		
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}
+
+
+
+how to process select queries in jdbc:
+```````````````````````````````````````
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Test2 {
+	
+	
+	public static void main(String[] args) throws Exception {
+		
+		
+		//load the driver class
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		//get the connection 
+		Connection con = DriverManager.
+				getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+		
+		//create the Statement object 
+		
+		Statement st = con.createStatement();
+		
+		//processing select query
+		
+		ResultSet rs = st.executeQuery("select * from student");
+		
+		while(rs.next())
+		{
+			System.out.println(rs.getInt(1) + " " + rs.getString(2));
+		}
+		
+		
+		//close the connection 
+		con.close();
+		
+	}
+
+}
+
+note:
+executeQuery() we have to call , the return type is ResultSet
+
+once we get the ResultSet object, on top of this object by calling corresponding 
+getter methods and by passing index numbers we can get the actual data. 
+
+index number should always starts from 1 
+
+where 1 represents 1st column..
+
+
+PreparedStatement:
+
+it is an interface available in java.sql package
+
+purpose: to process dynamic queries.
+
+
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class Test3 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		//load the driver class 
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		//get the connection 
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system","system");
+		
+		//create the object for PreparedStatement
+		
+		PreparedStatement ps = con.prepareStatement("insert into student values(?,?)");
+		
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.println("enter student id");
+		
+		int stid = s.nextInt();
+		
+		System.out.println("enter student name");
+		
+		String stname = s.next();
+		
+		
+		ps.setInt(1, stid);
+		
+		ps.setString(2, stname);
+		
+		int x= ps.executeUpdate();
+		
+		System.out.println(x + "row(s) inserted");
+		
+		
+		//close the connection 
+		
+		con.close();	
+		
+	}
+
+}
+
+
+Statement -> to process static queries
+PreparedStatment -> to process dynamic queries
+
+
+executeUpdate()->int
+executeQuery() ->ResultSet
+
+stid stname 
+100   ram
+101   pavan 
+
+example:
+````````
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+
+public class Test4 {
+	
+	public static void main(String[] args) throws Exception {
+		
+		//load the driver class
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","system");
+		
+		Statement st = con.createStatement();
+		
+		ResultSet rs = st.executeQuery("select * from student");
+		
+		ResultSetMetaData rsmd =  rs.getMetaData();
+		
+		System.out.println("no.of columns: " + rsmd.getColumnCount());
+		
+		for(int i=1;i<=rsmd.getColumnCount();i++)
+		{
+			System.out.println(rsmd.getColumnName(i) + " " + rsmd.getColumnTypeName(i) +  " "  + rsmd.getPrecision(i));
+		}
+		
+		
+	}
+
+}
+
+batch processing: 
+
+batch means group of queries together 
+
+instead of sending sql queries individually we should send like a batch 
+
+if we send like a batch no.of to and fro calls in between java environment and 
+db environment gets decreased.
+
+because of this performance may increased 
+
+to add the queries to the batch on top of either Statement or PreparedStatement
+we should call addBatch()
+
+to process this batch we should call executeBatch()
+
+return type of executeBatch() is int[].
+
+drawback:
+can we add select query to the batch?
+no 
+reason is executeBatch() return type is int[] , but where as to process select query we should call executeQuery() and the return type is also not matched which is ResultSet.
+
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Test1 {
+	
+	
+	public static void main(String[] args) {
+		try {
+		
+		//load the driver class
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		System.out.println("driver class loaded");
+		
+		//get the connection 
+		
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+		
+		System.out.println("i got the connection");
+		
+		
+		//send the sql queries - create the Statement object
+		
+		Statement st  = con.createStatement();
+		
+		
+		
+		st.addBatch("insert into student values(105,'sailu')");
+		st.addBatch("update student set stname='rk' where stid=100");
+		st.addBatch("delete from student where stid =104");
+		
+		
+		int x[] = st.executeBatch();
+		
+		System.out.println(x[0] + "row(s) inserted");
+		System.out.println(x[1] + "row(s) updated");
+		System.out.println(x[2] + "row(s) deleted");
+		
+		//close the connection 
+		
+		con.close();
+		
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+
+}
+
+transaction management:
+````````````````````````
+transaction -> do everything or do nothing 
+
+transaction involves mulitple operations.
+
+
+  transfering the funds from your account to your friend account 
+  
+     
+       ->2 update operations takes place 
+	   
+	   ->transaction completed
+	   
+	   
+	   debited from your account 
+	   but not credited to your friend account.. 
+	   
+	   
+transaction management:
+````````````````````````````
+package com.wipro.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class Test5 {
+	
+	public static void main(String[] args) throws Exception{
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system","system");
+		
+		con.setAutoCommit(false);
+		Statement st = con.createStatement();
+		st.addBatch("update rama set bal=bal-2000 where accno=1000");
+		st.addBatch("update sitha set bal=bal+2000 where accno=1001");
+		
+		
+		int x[]=st.executeBatch();
+		
+		if(x[0]>0&x[1]>0)
+		{
+			con.commit();
+			System.out.println("funds transffered successfully, have a nice day");
+		}
+		else
+		{
+			con.rollback();
+			System.out.println("something went wrong, kindly check your account numbers");
+		}
+		
+		
+			
+		
+		
+	}
+
+}
+
+we should maintain two tables
+
+rama
+sitha
+
+create table rama(accno number(5,2),accname varchar2(30),bal number(8,2));
+insert some data into rama's table
+create table sitha(accno number(5,2),accname varchar2(30),bal number(8,2));
+insert some data.
+
+Predicate -> test(T t) returntype: boolean 
+
+Function ->  R apply(T t) returntype: anytype
+
+Supplier -> T get()  returntype: anytype 
+
+Consumer -> void accept(T t) returntype: nothing 
+
+
+stream api :
+```````````
+The stream API in java provides more declarative way to work with collections 
+of objects. 
+
+
+
+It allows you to perform aggregate operations on collections such as 
+
+
+filtering 
+mapping
+sorting 
+....
+
+Streams are designed to work with lambdas and functional style operations, 
+making code more concise and readable.
+
+
+creating streams:
+
+  collections 
+  arrays
+  Stream interface methods 
+  
+  
+we can perform mainly two operations on stream api 
+
+1.intermediate operations 
+   transform the stream into another stream.
+   
+   filter
+   map
+   flatMap
+   distinct
+   sorted
+   
+   
+   
+
+2.terminal operations 
+
+   produce a result 
+   
+   collect
+   reduce
+   min
+   max
+   count
+   etc..
+   
+once a terminal operation is invoked, the stream is consumed and cannot 
+be reused.
+
+
+   
+  without stream api one basic example:
+  ``````````````````````````````````````
+ package com.techm.streamapi;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Test1 {
+	
+	public static void main(String[] args) {
+		
+		List<String> names = Arrays.asList("Philip","Sameera","Kushvanth","Lakshmi","Ibrahim","Srk");
+	
+		List<String> filteredNames = new ArrayList<>();
+		
+	    for(String name: names)
+	    {
+	    	if(name.startsWith("S")) {
+	    		filteredNames.add(name);
+	    	}
+	    }
+	    //print the filtered names
+	    
+	    for(String fn:filteredNames)
+	    {
+	    	System.out.println(fn);
+	    }
+		
+	}
+
+}
+
+
+
+same example with stream api:
+`````````````````````````````
+package com.techm.streamapi;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Test2 {
+public static void main(String[] args) {
+		
+		List<String> names = Arrays.asList("Philip","Sameera","Kushvanth","Lakshmi","Ibrahim","Srk");
+		
+		List<String> filterdNames = names.stream().filter(x->x.startsWith("S")).collect(Collectors.toList());
+        System.out.println(filterdNames);
+}
+}
+
+map():
+``````
+map() method in the  Stream api is used to transform each element of the stream 
+into another element by applying a function. 
+
+sorted():
+count()
+distinct()
+reduce()
+flatMap()
+etc..
+
+
+example:
+`````````
+package com.wipro.java8;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+	List<String> al =  Arrays.asList("welcome","to","kiran","swathi","ankit","priyansh","priyanka");
+		
+	List<String> filterdNames = al.stream().filter(x -> x.startsWith("p")).collect(Collectors.toList());
+	
+	System.out.println(filterdNames);
+	// R apply(T t);
+	
+	List<String> upperCaseNames = al.stream().map(x -> x.toUpperCase()).collect(Collectors.toList());
+	System.out.println(upperCaseNames);
+	
+	
+	List<String> sortedNames = al.stream().sorted().collect(Collectors.toList());
+	
+	System.out.println(sortedNames);
+	
+	//int compare(T o1, T o2);
+
+	List<String> sortedNamesDescending=al.stream().sorted( (x,y)->y.compareTo(x)).collect(Collectors.toList());
+	
+	System.out.println(sortedNamesDescending);
+	
+	// void accept(T t)
+	al.stream().sorted( (x,y)->y.compareTo(x)).forEach(x -> System.out.println(x));
+	
+	
+	List<Integer> numbers = Arrays.asList(3,9,2,8,1,4,4,3);
+	
+	Optional<Integer> min = numbers.stream().min((x,y) -> x.compareTo(y));
+	
+	min.ifPresent(value -> System.out.println("the minimum value is: " + value));
+	
+	
+	numbers.stream().max(Comparator.naturalOrder()).ifPresent(x->System.out.println("the maximum value is : " + x));
+    
+	//R apply(T t, U u);
+	
+	numbers.stream().reduce( (x,y) -> x+y ).ifPresent(x -> System.out.println("Total sum is: " + x));
+	
+	System.out.println("the sum is: " + numbers.stream().reduce(0, (x,y)->x+y));
+	
+	
+	System.out.println("original list:" + numbers);
+	
+	List<Integer> distinctIntegersList = numbers.stream().distinct().collect(Collectors.toList());
+		
+	
+	System.out.println("distinct list:" + distinctIntegersList);
+	
+	
+	Map<String,Integer> ageMap = new LinkedHashMap<>();
+	
+	ageMap.put("philip", 37);
+	ageMap.put("rk", 35);
+	ageMap.put("sameera", 25);
+	ageMap.put("kushvanth", 65);
+	
+	List<Integer> doubleValues = ageMap.values().stream().map(x -> x*2).collect(Collectors.toList());
+	
+	
+	System.out.println(doubleValues);
+	
+	
+	List<Customer> customers = DB.getAll();
+	
+	List<String> emails = customers.stream().map(x -> x.getEmail()).collect(Collectors.toList());
+	
+	System.out.println(emails);
+	
+	
+	List<List<String>> phoneNumbers = customers.stream().map(x -> x.getPhoneNumbers()).collect(Collectors.toList());
+	System.out.println(phoneNumbers);
+	
+	List<String> phones = customers.stream().flatMap(x -> x.getPhoneNumbers().stream()).collect(Collectors.toList());
+	System.out.println(phones);
+	}
+
+}
+
+
+
+Customer.java:
+````````````````
+package com.wipro.java8;
+
+import java.util.List;
+
+public class Customer {
+	
+	private Integer id;
+	private String name; 
+	private String email;
+	private List<String> phoneNumbers;
+	
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public List<String> getPhoneNumbers() {
+		return phoneNumbers;
+	}
+	public void setPhoneNumbers(List<String> phoneNumbers) {
+		this.phoneNumbers = phoneNumbers;
+	}
+	public Customer(Integer id, String name, String email, List<String> phoneNumbers) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.phoneNumbers = phoneNumbers;
+	}
+	
+	public Customer()
+	{
+		
+	}
+	
+	
+}
+
+
+
+DB.java:
+````````
+
+package com.wipro.java8;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class DB {
+
+	public static List<Customer> getAll() {
+
+		return Stream.of(
+
+				new Customer(101, "john", "john@gmail.com", Arrays.asList("987679", "876567")),
+				new Customer(102, "doe", "doe@gmail.com", Arrays.asList("675678", "123456")),
+				new Customer(103, "smith", "smith@gmail.com", Arrays.asList("123456", "678901"))).collect(Collectors.toList());
+
+	}
+}
+
+multithreading:
+````````````````
+package com.wipro.multithreading;
+
+public class Test1 extends Thread{
+	
+	@Override
+	public void run()
+	{
+		System.out.println(Thread.currentThread().getName());
+	}
+	public static void main(String[] args) {
+		
+		
+		//creating the thread
+		Test1 obj = new Test1();//new state
+		obj.setName("rk");
+		
+		//creating one more thread
+		
+		Test1 obj1 = new Test1();
+		obj1.setName("wipro");
+		
+		obj.start();//runnable state
+		obj1.start();
+		
+	}
+
+}
+
+------------------------
+package com.wipro.multithreading;
+
+public class Test1 extends Thread{
+	
+	@Override
+	public void run()
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(Thread.currentThread().getName() + "-->"  + i);
+			
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void main(String[] args) {
+		
+		
+		//creating the thread
+		Test1 obj = new Test1();//new state
+		obj.setName("rk");
+		
+		//creating one more thread
+		
+		Test1 obj1 = new Test1();
+		obj1.setName("wipro");
+		
+		obj.start();//runnable state
+		obj1.start();
+		
+	}
+
+}
+
+Runnable interface example without lamda expression:
+
+package com.wipro.multithreading;
+
+//implementation class for Runnable interface
+public class Test2 implements Runnable {
+
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName());
+
+	}
+
+}
+
+package com.wipro.multithreading;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		//create the Runnable object
+		Runnable obj = new Test2();
+		
+		//convert Runnable object into Thread object
+		
+		
+		Thread t = new Thread(obj);
+		t.setName("rk");
+		t.start();
+		
+		
+	}
+
+}
+
+
+-------
+package com.wipro.multithreading;
+
+public class Test3 {
+	
+	public static void main(String[] args) {
+		
+		//public void run();
+		Runnable obj = ()->{
+			
+			for(int i=1;i<=10;i++)
+			{
+				System.out.println(Thread.currentThread().getName() + "-->" + i);
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		
+		};
+		
+		//convert Runnable object into Thread object 
+		
+		Thread t = new Thread(obj);
+		t.setName("Rk");
+		t.start();
+		
+		Thread t1 = new Thread(obj);
+		t1.setName("wipro");
+		t1.start();
+		
+	}
+
+}
+
+EmployeeManagement Application usecase:
+```````````````````````````````````````
+
+core Java application for employee management using JDBC involves several steps. I'll outline a basic structure for you, including setup, database interaction, and a simple user interface. Here’s a high-level overview of the steps:
+
+Setup Your Development Environment:
+
+Install Java Development Kit (JDK).
+Install a database management system (DBMS) like Oracle or Mysql
+Add JDBC driver to your project.
+Design the Database Schema:
+
+Create a database and a table for storing employee information.
+Create a Java Project:
+
+Set up your project structure.
+Add necessary libraries (e.g., JDBC driver).
+Database Connection:
+
+Establish a connection to the database using JDBC.
+CRUD Operations:
+
+Implement Create, Read, Update, and Delete operations for employee data.
+User Interface:
+
+Create a simple text-based user interface to interact with the application
+
+
+servlet:
+```````
+servlet is the server side technology given by sunmicrosystem and implementations are provided by server vendors 
+
+using this technology we can develop dynamic web applications .
+
+it internally uses client server architecture to develop these applications. 
+
+client is a program which can send the request and server is also a program 
+used to process the request and giving response back to the client. 
+
+server vendors:
+
+apache tomcat server
+glassfish
+jboss
+etc..
+
+how to develop the dynamic web project?
+
+ click on file 
+ new
+ dynamic web project
+ give project name 
+ add the target runtime 
+ clck on browser 
+ add the tomcat9 server 
+ click on finish 
+
+package com.wipro.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class WelcomeServlet
+ */
+@WebServlet("/rk")
+public class WelcomeServlet extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		PrintWriter pw = response.getWriter();
+		
+		pw.println("<h1>welcome to servlets</h1>");
+		pw.close();
+		
+	}
+
+}
+
+
+note:
+if you get any port issues, go to window -> show view -> servers
+
+double click on added server 
+
+change the http port number from 8080 to any port(ex:9090)
+
+click on save(ctrl+s)
+
+run the application you will get the output.
+
+
+form handling in servlet:
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Arithmetic Operations</title><base>
+
+<link rel="stylesheet" href="ss.css"/>
+</head>
+<body>
+
+<div>
+<form action="process" method="post">
+
+Enter First no: &nbsp;<input type="text" name="t1"/><br/><br/>
+Enter second no:<input type="text" name="t2"/><br/>
+<input type="submit" value="sum"/>
+
+</form>
+</div>
+
+</body>
+</html>
+ProcessServlet.java:
+````````````````````
+package com.wipro.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ProcessServlet
+ */
+@WebServlet("/process")
+public class ProcessServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String fno = request.getParameter("t1");
+		String sno = request.getParameter("t2");
+		
+		//converting string type data to integer type data
+		int x = Integer.parseInt(fno);
+		int y = Integer.parseInt(sno);
+		
+		int z = x+y;
+		
+		PrintWriter pw = response.getWriter();
+		pw.println("<h1> the sum is: " + z + "</h1>");
+		
+		pw.close();
+		
+		
+		
+		
+		
+	}
+
+}
+
+note:
+under webapp folder only we should keep html files / css files/ javascript files
+
+
+servlet with jdbc integration:
+````````````````````````````````
+note:
+
+we should add ojdbc6.jar in two places
+
+ 1.to the buildpath of the project 
+ 
+ 2.copy the jar file and place it in lib folder(src->main->webapp->WEB-INF->lib)
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Arithmetic Operations</title><base>
+
+<link rel="stylesheet" href="ss.css"/>
+</head>
+<body>
+
+<div>
+<form action="process" method="post">
+
+Enter Student Id: &nbsp;<input type="text" name="t1"/><br/><br/>
+Enter Student Name<input type="text" name="t2"/><br/>
+<input type="submit" value="Register"/>
+
+</form>
+</div>
+
+</body>
+</html>
+
+
+ProcessServlet.java:
+````````````````````
+package com.wipro.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ProcessServlet
+ */
+@WebServlet("/process")
+public class ProcessServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String x = request.getParameter("t1");
+		String stname = request.getParameter("t2");
+		
+		//converting stid from string type to integer type
+		int stid = Integer.parseInt(x);
+		try {
+		
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+	    Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+	    PreparedStatement ps = con.prepareStatement("insert into student values(?,?)");
+	    ps.setInt(1, stid);
+	    ps.setString(2, stname);
+	    
+	    int result = ps.executeUpdate();
+		
+		
+		
+		PrintWriter pw = response.getWriter();
+		
+		if(result>0)
+		pw.println("<h1> Registration successfully done</h1>");
+		pw.println("<a href='index.html'>click </a>");
+		
+		pw.close();
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	
+	}
+
+}
+
+
+fetching the balacne from db in webapplication:
+`````````````````````````````````````````````````
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Arithmetic Operations</title><base>
+
+<link rel="stylesheet" href="ss.css"/>
+</head>
+<body>
+
+<div>
+<form action="process" method="post">
+
+Enter Account Number: &nbsp;<input type="text" name="t1"/><br/><br/>
+
+<input type="submit" value="GetBalance"/>
+
+</form>
+</div>
+
+</body>
+</html>
+
+
+ProcessServlet.java:
+````````````````````
+package com.wipro.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class ProcessServlet
+ */
+@WebServlet("/process")
+public class ProcessServlet extends HttpServlet {
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		String x = request.getParameter("t1");
+
+		// converting account number from string type to integer type
+		int accountNumber = Integer.parseInt(x);
+		try {
+
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "system");
+			PreparedStatement ps = con.prepareStatement("select bal from rama where accno=?");
+
+			ps.setInt(1, accountNumber);
+
+			ResultSet rs = ps.executeQuery();
+			PrintWriter pw = response.getWriter();
+			if (rs.next()) {
+				
+				pw.println("<h1>");
+				pw.println("the available balance is " + rs.getInt(1));
+				pw.println("</h1>");
+				pw.println("<a href='index.html'>click </a>");
+			}
+			else
+			{
+				pw.println("<h1>something went wrong, kindly check your account number</h1>");
+				pw.println("<a href='index.html'>click </a>");
+			}
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}
+
+
+->RequestDispatcher
+ 
+    forward()
+	include()
+	
+	
+jsp:
+````
+jsp is a server side technology given by sunmicrosystem and implementations 
+are provided by different different server vendors. 
+
+jsp is mainly focusing on presentation logic 
+where as servlet is focusing on business logic , so that we can separate the logics
+accordingly application maintain the code very easily.
+
+jsp can be divided into following three categories of tags
+
+ 1.scripting tags - insert the java code 
+ 
+ 2.directive tags - 
+ 
+ 3.action tags - 
+ 
+ 
+scripting tags can be again divided into three types
+
+1.scriptlet
+2.expression
+3.declarative tage
+
+using scriptlet tag we can declare the variables and we can make it display 
+we can insert the java code 
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- scriptlet tag -->
+<%
+ int stid=100;
+ String stname="Rama";
+ out.println("the student id is:" + stid);
+ out.println("<br/>");
+ out.println("the student name is: " + stname);
+
+%>
+</body>
+</html>
+
+
+note:
+whatever the code we are keeping under scriptlet tag, that will be moved to 
+service method of equivalent generated servlet class. 
+
+
+example on scriptlet,expresssion and declarative tag:
+````````````````````````````````````````````````````````
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<!-- scriptlet tag -->
+	<%
+	int stid = 100;
+	String stname = "Rama";
+	out.println("the student id is:" + stid);
+	out.println("<br/>");
+	out.println("the student name is: " + stname);
+	%>
+	<hr />
+	<!-- expression tag -->
+	<%="the student id is: " + stid%><br />
+	<%="the student name is: " + stname%>
+
+	<!-- declarative tag -->
+
+	<%!//class level varaibles
+	int empid = 200;
+	String empname = "rama";
+
+	public int getSquare(int x) {
+		return x * x;
+	}%>
+	<br/>
+
+	<%="the employee id is: " + empid%><br />
+	<%="the employee name is: " + empname%><br/>
+
+	<%="the square of the give number is: " + getSquare(3)%>
+	<br/>
+	
+
+</body>
+</html>
+
+
+
+exmples on page directive,include directive:
+``````````````````````````````````````````
+<%@ page language="java"
+         contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1"
+         import="java.util.Date"
+         %>
+    
+ <%@ include file="welcome.jsp"%>  
+ 
+  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<!-- scriptlet tag -->
+<%
+
+
+out.println("toda's date is: " + new Date());
+%>
+
+</body>
+</html>
+
+
+
+action tags:
+```````````
+
+In JavaServer Pages (JSP), action tags are special XML tags used to control the behavior of the JSP page and interact with JavaBeans, Java Servlets, and other server-side components. 
+
+They are part of the JSP standard tag library and provide various functionalities, such as 
+including other resources,
+forwarding requests, or 
+interacting with JavaBeans
+
+  <jsp:useBean/>
+  <jsp:setProperty/>
+  <jsp:getProperty/>
+  <jsp:forward/>
+  <jsp:include/>
+  <jsp:param/>
+  
+
+
+display.jsp:
+````````````````
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+    <p>Name: <%= request.getParameter("stid") %></p>
+    <p>Age: <%= request.getParameter("stname") %></p>
+
+</body>
+</html>
+
+process.jsp:
+````````````
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+<jsp:forward page="display.jsp">
+        <jsp:param name="stid" value="100"/>
+        <jsp:param name="stname" value="rk"/>
+    </jsp:forward>
+
+</body>
+</html>
+
+
+
+jsp:useBean:
+````````````
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"
+    import="com.wipro.servlets.User"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<jsp:useBean id="u" class="com.wipro.servlets.User" />
+<jsp:setProperty property="name" name="u" value="rk"/>
+<jsp:setProperty property="age" name="u" value="20"/>
+<p>User Name:<jsp:getProperty property="name" name="u"/></p>
+<p>User Age: <jsp:getProperty property="age" name="u"/></p>
+
+</body>
+</html>
+
+
+
+User.java:
+````````````
+package com.wipro.servlets;
+
+public class User {
+	
+	
+	private String name;
+	private int age;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
